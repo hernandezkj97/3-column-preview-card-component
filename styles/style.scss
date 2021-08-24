@@ -80,6 +80,10 @@ $transparent-white:hsla(0, 0%, 100%, 0.75);
                     color: $transparent-white;
                     border: 1px solid $transparent-white;
                 }
+
+                &:focus{
+                    outline:0;
+                }
             }
 
         }

@@ -72,6 +72,10 @@
   border: 1px solid rgba(255, 255, 255, 0.75);
 }
 
+.container .card .card-content .btn:focus {
+  outline: 0;
+}
+
 .container .sedan-card {
   border-radius: 10px 10px 0 0;
 }
