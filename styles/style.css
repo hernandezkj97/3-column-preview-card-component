@@ -127,5 +127,10 @@
   .container .luxury-card {
     border-radius: 0 10px 10px 0;
   }
+  .container .attribution {
+    position: absolute;
+    bottom: 35%;
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
