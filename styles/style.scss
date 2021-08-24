@@ -1,0 +1,161 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+$Very-light-gray: hsl(0, 0%, 95%);
+$transparent-white:hsla(0, 0%, 100%, 0.75);
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 3.75rem auto;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+ 
+ 
+ 
+ 
+    .card { 
+     background-color: $Bright-orange;
+     width: 375px;
+    
+
+
+
+
+        
+
+        .card-content{
+            margin: 0 0 0 1.5rem;
+            padding:1rem  0 0 1.5rem;
+
+
+
+
+            .icon>img{
+                width: 3.25rem;
+                margin-top: 20.1px;
+            }
+            .card-header>h2{
+             color:$Very-light-gray;
+             font-family: 'Big Shoulders Display', cursive;
+             font-size: 1.90rem;
+             margin-top: 24.2px;
+            }
+            
+            .card-text p{
+                font-size: 15px;
+                color: $transparent-white;
+                font-family: 'Lexend Deca', sans-serif;
+                font-weight: 400;
+                margin: 19.5px 6rem 20.5px 0rem;
+            }
+
+            .btn{
+                border:none;
+                padding:0.57rem 1.2rem;
+                margin-bottom: 39px;
+                border-radius: 30px;
+                background-color: $Very-light-gray;
+                font-size: 15px;
+                font-family: 'Lexend Deca', sans-serif;
+                transition: .3s ease;
+                cursor: pointer;
+
+
+
+                &:hover{
+                    background-color: transparent;
+                    color: $transparent-white;
+                    border: 1px solid $transparent-white;
+                }
+            }
+
+        }
+     
+     
+    }
+
+    .sedan-card{
+        border-radius: 10px 10px 0 0;
+    }
+
+
+    .suvs-card{
+        background-color: $Dark-cyan;
+    }
+
+
+    .luxury-card{
+        background-color: $Very-dark-cyan;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+
+@media only screen and (min-width:1440px){
+    .container{
+        width: 1500px;
+        flex-direction: row;
+
+        .card{
+            width: 277px;
+            height:452px;
+
+            .card-content{
+                margin:0;
+                padding:0;
+            }
+
+            .card-content{
+                padding: 0 0 0 2.5rem;
+
+                    .icon>img{
+                        margin:31px 0 0 0;
+                        width: 2.75rem;
+                    }
+
+
+                    .card-header>h2{
+                        margin:20px 0 0 0;
+                    }
+
+
+                .card-text>p{
+                    margin: 20px 2rem 50px 0;
+
+    
+                }
+
+
+                .btn{
+                    margin:0;
+
+                }
+            }
+        }
+
+    .sedan-card{
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .luxury-card{
+        border-radius: 0 10px 10px 0;
+    }
+
+
+}
+
+    
+}
